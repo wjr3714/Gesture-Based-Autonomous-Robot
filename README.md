@@ -1,7 +1,7 @@
 # Gesture-Based-Autonomous-Robot
-Repository for RIT Multidisciplinary Senior Design Project ALFRD (P20001), an autonomous gesture recognition robot.
+**Repository for RIT Multidisciplinary Senior Design Project ALFRD (P20001), an autonomous gesture recognition robot.**
 
-Project Website: https://wiki.rit.edu/display/P20001/Project+Overview 
+**Project Website:** https://wiki.rit.edu/display/P20001/Project+Overview 
 
 **Project Description:** The goal of this project was to develop a robot that can process user gestures (e.g., sign language) and perform tasks that the user may not be able to complete on their own. The short term goal of this project was to detect one specific gesture and have the robot do one simple task: deliver an object to the user. In the long-term, this project could support programs such as those that advance medical care and quality of life for those in assisted living.
 
