@@ -1,0 +1,165 @@
+gestureWidget:
+
+<Image>:
+    canvas:
+        Rectangle
+            texture: self.texture
+            size: self.width, self.height
+            pos: self.x, self.y
+
+<MessagePopup>:
+    size_hint: [.4, .4]
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            size_hint: [1, .8]
+            id: system_message
+            text: root.errorMess
+        Button:
+            size_hint: [1, .2]
+            text: "Dismiss"
+            on_press: root.dismiss()
+            
+<HelpMenu>:
+    Label:
+        size_hint_y: None
+        height: self.texture_size[1]
+        text_size: self.width, None
+        text: root.text
+
+<AutoCaptureFacesPopup>:
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: [1, .80]
+            Image:
+                id: addUser
+                source: './assets/images/addUser.png'
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: [1, .05]
+            Label:
+                id: addUserIntr
+                text: 'Instructions for adding users...'
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: [1, .15]
+            GridLayout:
+                cols: 3
+                Label:
+                    text: 'User Name'
+                    bold: True
+                TextInput:
+                    id: addUserLabel
+                Button:
+                    id: start_recording
+                    text: 'Start Recording'
+                    bold: True
+                    on_press: root.start_recording()
+
+<AddGesturePopUp>:
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: [1, .80]
+            Image:
+                id: add_source
+                source: './assets/images/temp.png'
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: [1, .20]
+            GridLayout:
+                cols: 3
+                Label:
+                    text: 'Gesture Name'
+                    bold: True
+                TextInput:
+                    id: gestureLabel
+                Button:
+                    id: start_recording
+                    text: 'Start Recording'
+                    bold: True
+                    on_press: root.start_recording()
+                Button:
+                    id: save_recording
+                    text: 'Save'
+                    bold: True
+                    on_press: root.addGesture()
+
+
+<SettingsPopUp>:
+    GridLayout:
+        cols: 1
+        Button:
+            text: 'Add Users Manual'
+            on_press: root.makeFaceEmbeddings()
+            bold: True
+        Button:
+            text: 'Add Users Automatic'
+            id: auto_add_users
+            on_press: root.autoFaceEmbeddings()
+            bold: True
+        Button:
+            text: 'Display Auxilary Info: False'
+            id: aux_info
+            on_press: root.displayInfo()
+            bold: True
+        Button:
+            text: 'Record Session: False'
+            id: record_session
+            on_press: root.recordSession()
+            bold: True
+        Button:
+            text: 'Set Robot Actions'
+            on_press: root.robot_actions()
+            bold: True
+        Button:
+            text: 'Available Gestures'
+            on_press: root.gestureList()
+            bold: True
+        Button:
+            text: 'Available Users'
+            on_press: root.userlist()
+            bold: True
+        Button:
+            text: 'Help'
+            on_press: root.displayHelp()
+            bold: True
+
+
+
+<gestureWidget>:
+    BoxLayout:
+        size: root.width, root.height
+        Image:
+            id: image_source
+            source: 'assets/images/foo.png'
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height / 20
+        spacing: '5dp'
+        AnchorLayout:
+            anchor_y: 'bottom'
+            size_hint: [1, .10]
+            GridLayout:
+                cols: 4
+                spacing: '10dp'
+                Button:
+                    id:status
+                    text:'Play'
+                    bold: True
+                    on_press: root.playPause()
+                Button:
+                    text: 'Add Gesture'
+                    bold: True
+                    on_press: root.addGesturePopup()
+                Button:
+                    text: 'Settings'
+                    bold: True
+                    on_press: root.setting()
+                Button:
+                    text: 'Close'
+                    bold: True
+                    on_press: root.close()
