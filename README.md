@@ -15,7 +15,7 @@
 
 **Humans.py:** defines the human object which is used to encapsulate the attributes of humans in the environment. In the current version of the application (as of May, 2020) these attributes are identity, current pose, and the predicted gesture.
 
-**Robot.py:** handles all interactions between the robot and the batcave. Due to limitations imposed by COVID-19, a majority of this class has yet to be implemented, though a basic layout is provided in the source code.
+**Robot.py:** handles all interactions between the robot and the docking station. 
 
 **GestureClassification.py:** handles all tasks related to adding features to the gesture queue, normalizing features, and providing predictions.
 
