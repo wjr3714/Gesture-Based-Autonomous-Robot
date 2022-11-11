@@ -3,8 +3,11 @@ Repository for RIT Multidisciplinary Senior Design Project ALFRD (P20001), an au
 
 Project Website: https://wiki.rit.edu/display/P20001/Project+Overview 
 
+**Project Description:** The goal of this project was to develop a robot that can process user gestures (e.g., sign language) and perform tasks that the user may not be able to complete on their own. The short term goal of this project was to detect one specific gesture and have the robot do one simple task: deliver an object to the user. In the long-term, this project could support programs such as those that advance medical care and quality of life for those in assisted living.
 
-The application was implemented using python’s kivy language to construct a GUI. Several class files were also created to handle various aspects of the project. A brief description of each relevant file and class file are provided below:
+**Robot Navigation:** The robot will remain at its docking station until a gesture is detected, causing the robot to perform the corresponding task. The robot will use a VFH+ algorithm with a Pixy2 Cam to determine target trajectory and obstacle avoidance. After the task has been completed the robot would return to its docking station.
+
+**Software (Face & Gesture Recognition):** The application was implemented using python’s kivy language to construct a GUI. Several class files were also created to handle various aspects of the project. A brief description of each relevant file and class file are provided below:
 
 **App.py:** defines the layout, and behavior of the main page of the GUI application. Several classes are included in this file which define different aspects of the GUI. This is also the file that should be run to run the application.
 
