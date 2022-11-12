@@ -1,4 +1,4 @@
-# Gesture-Based-Autonomous-Robot
+# Gesture-Based Autonomous Robot
 **Repository for Rochester Institute of Technology Multidisciplinary Senior Design Project ALFRD (P20001), an autonomous gesture recognition robot.**
 
 **Project Website:** https://wiki.rit.edu/display/P20001/Project+Overview
