@@ -1,7 +1,7 @@
 # Gesture-Based Autonomous Robot
-**Repository for Rochester Institute of Technology's Multidisciplinary Senior Design Project:
+**Repository for Rochester Institute of Technology's Multidisciplinary Senior Design Project:**
 - **Project ID:** P20001
-- **Project Name:** ALFRD, The Autonomous Gesture-Recognition Robot**
+- **Project Name:** ALFRD, The Autonomous Gesture-Recognition Robot
 
 **Project Website:** https://wiki.rit.edu/display/P20001/Project+Overview
 
